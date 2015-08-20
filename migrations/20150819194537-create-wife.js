@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = {
   up: function(queryInterface, Sequelize) {
     return queryInterface.createTable('Wives', {
@@ -13,9 +14,6 @@ module.exports = {
       },
       job: {
         type: Sequelize.STRING
-      },
-      HusbandId: {
-        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
